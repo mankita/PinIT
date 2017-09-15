@@ -4,10 +4,23 @@
         <title>PinIt</title>
         <link rel="stylesheet" href="style.css">
         <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <style>
+            .heading, h1{
+                text-align: center;
+                color:deepskyblue;
+                padding:0.5em;
+
+            }
+        </style>
     </head>
+    
     <body>
-        <input id="address" type="text">
-        <button onclick="pinAddressWithText()">Pin Address</button>
+        <div class="heading">
+        <h1>PinIt- Pin your Travel</h1>
+        <h2>Please allow popups if blocked and reload the page to get the facebook pins working</h2>
+        <input id="address" type="text" placeholder="Enter New Place">
+         <button onclick="pinAddressWithText()">Pin Address</button>
+        </div>
         <div id="map"></div>
         <script src="app.js"></script>
         <script async defer
